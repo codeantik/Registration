@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+.login-page-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100rem;
+  background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+}
+
+.login {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 60%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 -5px 3px -3px inset  #0F2027, 0 5px 3px -3px  #0F2027;
+  transform: scale(1.3);
+}
+
+.login > h1 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  font-family: 'Slabo 27px', serif;
+  letter-spacing: 2px;
+  
+}
+
+.login > svg {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.login-detalis {
+  display: flex;
+  margin: 50px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-detalis > p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 19px;
+  font-family: 'Slabo 27px', serif;
+  letter-spacing: 0.6px;
+}
+
+.login-detalis > input {
+  margin-top: 10px;
+  padding: 18px;
+  border: 1.4px solid black;
+  font-size: 16px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.forgot-password {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.login-button {
+  width: 100px;
+  text-align: center;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding: 14px 25px 14px 25px;
+  border-radius: 10px;
+  margin: 0 auto;
+  color: white;
+  background-color: black;
+  margin-top: 10%;
+  font-size: 20px;
+  font-family: 'Slabo 27px', serif;
+  letter-spacing: 0.3px;
+  
+}
+
+.login-page-create-account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-family: 'Slabo 27px', serif;
+  letter-spacing: 0.6px;
+}
+
+@media screen and (max-width: 735px) {
+  .login-page-container{
+    height: 100vh;
+  }
+  .login {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 80%;
+    transform: none;
+  }
+  .login > h1 {
+    font-size: 24px;
+  }
+  .login-detalis {
+    margin: 30px;
+  }
+  .login-detalis > p {
+    font-size: 14px;
+    margin-top: 7px;
+  }
+  .login-detalis > input {
+    margin-top: 5px;
+    padding: 13px;
+    font-size: 12px;
+  }
+
+  .forgot-password {
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 11px;
+  }
+  .login-button {
+    padding: 10px 25px 10px 25px;
+    font-size: 15px;
+    margin-top: 7%;
+
+  }
+  .login-page-create-account {
+    font-size: 12px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1480px)
+{
+   .login-page-container{
+     height: 100vh;
+   }
+
+  .login{
+    margin-top:10%;
+    margin-bottom: 10%;
+    width: 35%;
+    transform: none;
+  }
+
+}
